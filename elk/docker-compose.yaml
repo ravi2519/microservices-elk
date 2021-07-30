@@ -14,9 +14,10 @@ services:
     logstash:
         image: docker.elastic.co/logstash/logstash:6.3.2
         ports:
-            - '25826:25826'
+            - '9999:9999'
         volumes:
-            - $PWD/elk-config:/elk-config
+            - ./elk-config:/elk-config
+            - ./elk-config/logstash.yml:/usr/share/logstash/config/logstash.yml
         command: logstash -f /elk-config/logstash.config
         depends_on:
             -  elasticsearch

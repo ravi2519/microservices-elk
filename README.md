@@ -1,3 +1,8 @@
-[![CI/CD](https://github.com/ravi2519/hello-world-kubernetes/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/ravi2519/hello-world-kubernetes/actions/workflows/build.yaml)
+# Microservices with ELK
 
-# hello-world-kubernetes
+> vim /etc/sysctl.conf
+Add
+> vm.max_map_count=262144
+Then do 
+> sysctl --system
+Or restart the host
